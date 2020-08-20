@@ -1,0 +1,88 @@
+# per body part: x,y,confidence
+INDEX_TO_PART = {
+    0: "Nose",
+    1: "Neck",
+    2: "RShoulder",
+    3: "RElbow",
+    4: "RWrist",
+    5: "LShoulder",
+    6: "LElbow",
+    7: "LWrist",
+    8: "MidHip",
+    9: "RHip",
+    10: "RKnee",
+    11: "RAnkle",
+    12: "LHip",
+    13: "LKnee",
+    14: "LAnkle",
+    15: "REye",
+    16: "LEye",
+    17: "REar",
+    18: "LEar",
+    19: "LBigToe",
+    20: "LSmallToe",
+    21: "LHeel",
+    22: "RBigToe",
+    23: "RSmallToe",
+    24: "RHeel"
+#     ,25: "Background"
+}
+
+PART_TO_INDEX = {
+"Nose" : 0,
+"Neck" : 1,
+"RShoulder" : 2,
+"RElbow" : 3,
+"RWrist" : 4,
+"LShoulder" : 5,
+"LElbow" : 6,
+"LWrist" : 7,
+"MidHip" : 8,
+"RHip" : 9,
+"RKnee" : 10,
+"RAnkle" : 11,
+"LHip" : 12,
+"LKnee" : 13,
+"LAnkle" : 14,
+"REye" : 15,
+"LEye" : 16,
+"REar" : 17,
+"LEar" : 18,
+"LBigToe" : 19,
+"LSmallToe" : 20,
+"LHeel" : 21,
+"RBigToe" : 22,
+"RSmallToe" : 23,
+"RHeel" : 24,
+"Background" : 25
+}
+
+POINTS_PER_PART = 3 #x, y, conf
+
+BODY25_EDGES = [
+    [15, 17, "fuchsia"],
+    [0, 15, "magenta"],
+    [0, 16, "darkviolet"],
+    [16, 18, "indigo"],
+    [0, 1, "crimson"],
+    [1, 2, "darkorange"],
+    [2, 3, "orange"],
+    [3, 4, "yellow"],
+    [1, 5, "greenyellow"],
+    [5, 6, "lawngreen"],
+    [6, 7, "lime"],
+    [1, 8, "red"],
+    [8, 9, "limegreen"],
+    [9, 10, "springgreen"],
+    [10, 11, "turquoise"],
+    [11, 24, "turquoise"],
+    [11, 22, "turquoise"],
+    [22, 23, "turquoise"],
+    [8, 12, "dodgerblue"],
+    [12, 13, "royalblue"],
+    [13, 14, "blue"],
+    [14, 21, "blue"],
+    [14, 19, "blue"],
+    [19,20, "blue"]
+    
+]
